@@ -21,16 +21,13 @@ ubelubephubant.
 '''
 
 def ubbi_dubbi(word):
-    letters = []
-    new_list = []
+    output = []
+    print(word)
     for letter in word:
-        letters.append(letter)
-    print(letters)
-    for letter in letters:
         if letter in 'aeiou':
-            new_list.append('ub')
-        new_list.append(letter)
-    return ''.join(new_list)
+            output.append('ub')
+        output.append(letter)
+    return ''.join(output)
     
 print(ubbi_dubbi('elephant'))
-print(ubbi_dubbi('octopus'))
+print(ubbi_dubbi('octopus')) 
